@@ -8,16 +8,21 @@ $(document).ready(function() {
     var slogan2=$("#slogan2");
     var slogan3=$("#slogan3");
     var slogan4=$("#slogan4");
-    setTimeout(function(){
-        slogan1.fadeIn("5000");
-    },1000);
-    setTimeout(function(){
-        slogan2.fadeIn("5000");
-    },3000);
-    setTimeout(function(){
-       slogan3.fadeIn("5000")
-    },5000);
-    setTimeout(function(){
-        slogan4.fadeIn("5000")
-    },7000);
+    
+    slogan1.slideDown(3000,function(){
+        slogan1.animate({opacity:'0'},5000, function(){
+             slogan2.slideDown(3000, function() {
+                  slogan2.animate({opacity:'0'},5000, function(){
+                       slogan3.slideDown(3000, function() {
+                            slogan3.animate({opacity:'0'},5000, function(){
+                                 slogan4.slideDown(3000, function() {
+                                    slogan4.animate({opacity:'0'},5000);
+                               });
+                            });
+                       });
+                  });
+             });
+        });
+    });
+
 });
