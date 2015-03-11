@@ -5563,13 +5563,11 @@ button.close {
   position: absolute;
   left: 15%;
   right: 15%;
-  top: 50px;
+  top: 20px;
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #383838;
-  font-size:18px;
-  font-weight: bold;
+  color: #ffffff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
 }
@@ -6641,14 +6639,14 @@ figure img {
 }
 .service_teaser.vertical .service_photo figure {
   border-radius: 6px 6px 0 0;
-  min-height: 229px;
+  min-height: 358px;
   border-right: none 0px #cccccc;
   border-left: none 0px #cccccc;
 }
 .service_teaser.vertical .service_details {
   background-color: #ffffff;
   height: auto;
-  padding: 0 20px 20px 20px;
+  padding: 0 20px;
 }
 .service_teaser.vertical .service_details p {
   font-weight: 300;
